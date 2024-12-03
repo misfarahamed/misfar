@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation bar</title>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+#list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+margin-top: 100px;
+}
+a{
+display: block;
+    width: 200px;
+background-color: black;
+padding: 15px;
+color: whitesmoke;
+text-decoration: none;
+}
+a:hover{
+    background-color: aqua;
+}
+#sec{
+list-style: none;
+display: none;
+}
+#list li:nth-child(2):hover #sec{
+display:unset;
+}
+.thir{
+transform: translateX(230px) translateY(-49px);
+list-style: none;
+position: absolute;
+display: none;
+
+}
+#sec li:nth-child(3):hover .thir{
+    display: unset;
+}
+
+
+</style>
+
+
+
+</head>
+<body>
+    
+<div id="contaniner">
+<ul id="list">
+<li><a href="">misfar</a></li>
+<li><a href="">misfar</a>
+<ul id="sec">
+    <li><a href="">ahamed</a></li>
+    <li><a href="">ahad</a></li>
+    <li><a href="">ahamed</a>
+    <ul class="thir">
+<li><a href="">ahamed</a></li>
+<li><a href="">ahamed</a></li>
+<li><a href="">ahamed</a></li>
+    </ul>
+    </li>
+    <li><a href="">ahaed</a></li>
+    <li><a href="">ahamed</a></li>
+</ul></li>
+<li><a href="">misfar</a></li>
+<li><a href="">misfar</a></li>
+<li><a href="">misfar</a></li>
+</ul>
+
+
+</div>
+
+
+
+
+</body>
+</html>
