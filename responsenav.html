@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+justify-content: center;
+background-color: black;
+}
+.items{
+    background-color: gray;
+    border-radius: 10px;
+cursor: pointer;
+border: 2px gray solid;
+position: relative;
+}
+.items ul {
+display: flex;
+position: relative;
+}
+
+span{
+transition: all ease-in-out .6s;
+}
+
+ul li{
+    list-style: none;
+width: 100px;
+text-align: center;
+position: relative;
+flex: 1;
+}
+ul li :hover{
+color: aliceblue;
+}
+ul li:nth-child(1):hover span.icon,ul li:nth-child(2):hover span.icon,ul li:nth-child(3):hover span.icon,ul li:nth-child(4):hover span.icon{
+    animation: animate 0.6s ease-in-out 0.1s 1 forwards;
+    background-color: black;
+    flex: 2;
+}
+
+@keyframes animate{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 1;
+        transform: translate(40px,-20px);
+    }
+}
+
+ul li:nth-child(1):hover span.icon{
+    color: aliceblue;
+}
+
+ul li:nth-child(2):hover span.icon{
+    color: lightgreen;
+}
+
+ul li:nth-child(3):hover span.icon{
+    color: skyblue;
+}
+
+ul li:nth-child(4):hover span.icon{
+    color: red;
+}
+
+a{
+    color: black;
+ text-decoration: none;   
+display: flex;
+flex-direction: column;
+}
+span.icon{
+    border-radius: 50%;
+width: 45%;
+font-size: 30px;
+transform: translate(40px,10px);
+}
+span.text{
+    transform: translate(10px,-20px);
+opacity: 0;
+}
+ul li :hover span.text {
+    animation: animatee 0.6s ease-in-out 0.3s 1 forwards;
+}
+@keyframes animatee{
+    from{
+      opacity: 0;
+    }
+to{
+opacity: 1;
+}
+}
+
+</style>
+
+</head>
+<body>
+    
+<div class="container">
+<div class="items">
+<ul>
+    <li><a href="#"><span class="icon"><i class="fa-solid fa-cloud"></i></span><span class="text">cloud</span></a></li>
+    <li><a href="#"><span class="icon"><i class="fa-solid fa-trash"></i></span><span class="text">trash</span></a></li>
+    <li><a href="#"><span class="icon"><i class="fa-brands fa-google"></span></i><span class="text">google</span></a></li>
+    <li><a href="#"><span class="icon"><i class="fa-brands fa-youtube"></i></span><span class="text">Youtube</span></a></li>
+</ul>
+
+</div>
+</div>
+
+</body>
+</html>
