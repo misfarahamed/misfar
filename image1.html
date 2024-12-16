@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    display: flex;
+    justify-content: center;
+height: 100vh;
+align-items: center;
+}
+
+div{
+    display: flex;
+width: 50%;
+height: 50vh;
+margin: 5px;
+}
+div>div{
+    flex: 1;
+transition: all 0.6s;
+width: 1200px;
+max-height: 90%;
+}
+div>:nth-child(1){
+    background-image: url(./wp8617921-killzone-shadow-fall-wallpapers.jpg);
+background-size: cover;
+background-position: center;
+}
+ div:nth-child(2){
+    background-image: url(./wp5269980-dante-devil-may-cry-wallpapers.png);
+    background-size: cover;
+    background-position: center;
+
+}
+div:nth-child(3){
+    background-image: url(./wp2272919-uncharted-4-a-thiefs-end-wallpapers.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+.sm:hover{
+    flex: 2;
+}
+</style>
+</head>
+<body>
+    <div id="container">
+        <div class="sm"></div>
+        <div class="sm"></div>
+        <div class="sm"></div>
+</div>
+</body>
+</html>
